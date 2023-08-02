@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project Vivi</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="container">
+      <img src="logotnt.png" class="logo">
+      <div class="Home"><a href="index.html" style="color:black"><strong>Home</strong></a></div>
+      <div class="Our Package"><a href="#OP" style="color:black;"><strong>Our Package</strong></a></div>
+      <div class="Contact Us"><a href="#CU" style="color:black;"><strong>Contact us</strong></a></div>
+    </nav>
+    <header>
+      <h1 style="color:rgb(60, 132, 135)"><strong>FATAHILLAH Tour and Travel</strong></h1>
+      <h3><em>ENJOY YOUR TRIP WITH US!</em></h3>
+
+      <p>Get to Know Your Dream Destinations and Plan Your Holidays Carefully</p>
+      <p>We believe that every individual has different vacation dreams.<br>
+         Whether you dream of exploring the beautiful Borobudur temple in Magelang,<br>
+         feeling the warmth of the sun on tropical white sand beaches,<br>
+         or wandering in the heart of majestic cities steeped in history and culture,<br>
+         we are here to help make your every travel dream come true.</p>
+    </header>
+    
+    <main>
+      <div class="wrapper">
+        <div class="slides">
+          <span id="slide-1"></span>
+          <span id="slide-2"></span>
+          <span id="slide-3"></span>
+
+          <div class="images">
+           <img src="komodo.jpg">
+           <img src="pulau.jpeg">
+           <img src="pantai1.jpg">
+          </div> 
+          <div class="navigation">
+           <a href="#slide-1">1</a>
+           <a href="#slide-2">2</a>
+           <a href="#slide-3">3</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="formulir">
+      <h2>Formulir Pemesanan</h2>
+      <form onsubmit="return kirimPesan()">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+        <label for="paket">Pesan Paket:</label>
+        <select id="paket" required>
+          <option value="Eksplorasi Alam">Paket Eksplorasi Alam</option>
+          <option value="Liburan Pantai">Paket Liburan Pantai</option>
+        </select><br>
+        <label for="pesan">Pesan Tambahan:</label>
+        <textarea id="pesan"></textarea>
+
+        <button type="submit">Pesan sekarang juga</button>
+      </form>
+    </section>
+    </section>
+
+    <section>
+       <section id="pakets">
+       <h1 id="OP">OUR PACKAGE</h1>
+
+       <div class="paket">
+       <h3>Paket Eksplorasi Alam</h3>
+       <p>Jelajahi alam dengan paket perjalanan kami yang menakjubkan</p>
+       <p>Bali,Raja Ampat,Taman Nasional Bromo Tengger Semeru,Taman Nasional Komodo,Danau Toba,Taman Nasional Tanjung Puting,Pulau Lombok,Taman Nasional Way Kambas,Taman Nasional Lorentz,Taman Nasional Bukit Barisan Selatan</p>
+    <button onclick="pesanPaket('Eksplorasi Alam')"></button>
+    </div>
+    <div class="paket">
+        <h3>Paket Liburan Pantai</h3>
+        <p>Rekreasi dan menikmati pasir putih dengan paket liburan kami yang menyenangkan</p>
+        <p>Pantai Kuta - Bali,Pantai Pink - Pulau Komodo, Nusa Tenggara Timur,Pantai Parangtritis - Yogyakarta,Pantai Tanjung Tinggi - Belitung,Pantai Tegal Wangi - Bali,Pantai Derawan - Kalimantan Timur,Pantai Ora - Maluku,Pantai Nihiwatu - Sumba, Nusa Tenggara Timur,Pantai Karimunjawa - Jawa Tengah,Pantai Belitung - Bangka Belitung</p>
+        <button onclick="pesanPaket('Liburan Pantai')"></button>
+    </div>
+    </section>
+    </section>
+    
+  <section class="callus">
+    <h1 id="CU">CONTACT US</h1>
+
+     <p>instagram = vivyvivya</p>
+     <p>email = viviannafatahillah@gmail.com</p>
+     <p>phone = 085780202737</p>
+
+     <p>Thank you for your time and consideration. <br>
+      We eagerly await the opportunity to welcome you,<br>
+      to a world where travel knows no bounds<br>
+      and where every destination is a canvas for your dreams.<br>
+     </p>
+
+  </section>
+  <script src="./js/script.js"></script>
+  <footer>
+    <p>&copy; 2023 Fatahillah TNT. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
